@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Clase Digital - Uso de las Mayúsculas</title>
+    <!-- Ruta estática de Spring Boot para estilos -->
+    <link rel="stylesheet" th:href="@{/css/estilos.css}" href="style.css"> 
+</head>
+<body>
+
+    
+          
+    <main class="main-container">
+        <!-- Banner Principal -->
+        <header class="hero-section">
+            <h1>Plan de Clase Digital Interactivo</h1>
+            <p>Practicar el uso correcto de las mayúsculas en textos y en era digital. (Netiquetas).</p>
+            <div class="docente-tag">
+                Profa. María Antonieta Beatriz Cux Morales
+            </div>
+        </header>
+
+        <!-- Sección de Objetivos / Presentación -->
+        <h2 style="margin-bottom: 1.5rem; color: var(--color-primario);">Módulos de Aprendizaje</h2>
+
+        <!-- 3.2. Tarjetas Pedagógicas (.tarjeta-modulo) -->
+        <section class="contenedor-tarjetas">
+            
+            <article class="tarjeta-modulo">
+                <div>
+                    <h3>1. Reglas y Ejemplos</h3>
+                    <p>Reglas del uso de las mayusculas sobre nombres propios, inicios de oración y el uso correcto en redes sociales (netiquetas).</p>
+                </div>
+                <a th:href="@{/contenido}" class="btn">Explorar Contenido</a>
+            </article>
+
+            <article class="tarjeta-modulo">
+                <div>
+                    <h3>2. Búsqueda del Tesoro</h3>
+                    <p>Actividad práctica interactiva de clasificación: coloca la letra mayúscula en el lugar correcto.</p>
+                </div>
+                <a th:href="@{/actividad}" class="btn">Iniciar Actividad</a>
+            </article>
+
+            <article class="tarjeta-modulo">
+                <div>
+                    <h3>3. Quiz & Cuestionario</h3>
+                    <p>Prueba tus conocimientos con ejercicios en comprensión de.</p>
+                </div>
+                <a th:href="@{/evaluacion}" class="btn btn-acento">Ir a Evaluación</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Recurso Didáctico Digital | Elaborado por Profesora María Antonieta Beatriz Cux Morales</p>
+    </footer>
+
+    <!-- Ruta estática de JavaScript -->
+    <script th:src="@{/js/script.js}" src="../static/js/script.js"></script>
+</body>
+</html>
+
