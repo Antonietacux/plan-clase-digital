@@ -9,5 +9,4 @@ function HeaderClase({ tituloTema, nombreDocente, horario }) {
         </header>
     );
 }
-
 export default HeaderClase;
