@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion";
-
 function ActividadItem({ tituloActividad, duracion, etapaDidactica }) {
   return (
     <motion.div
@@ -20,8 +19,7 @@ function ActividadItem({ tituloActividad, duracion, etapaDidactica }) {
         backgroundColor: "#ffffff",
         color: "#1e293b"
       }}
-    >
-      
+    >      
       <div>
         <span
           style={{
@@ -38,7 +36,6 @@ function ActividadItem({ tituloActividad, duracion, etapaDidactica }) {
 
         <h4>{tituloActividad}</h4>
       </div>
-
       <span style={{ color: "#64748b" }}>
         ⏱️ {duracion}
       </span>
