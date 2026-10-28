@@ -1,4 +1,4 @@
-
+feet: components/ActividadItem.jsx
 import { motion } from "framer-motion";
 
 function ActividadItem({ tituloActividad, duracion, etapaDidactica }) {
