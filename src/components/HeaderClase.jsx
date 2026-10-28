@@ -7,7 +7,7 @@ function HeaderClase({ tituloTema, nombreDocente, horario }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 3 }}
       style={{
-        backgroundColor: "#3876ac",
+        backgroundColor: "#295780",
         color: "white",
         padding: "30px",
         borderRadius: "8px"
