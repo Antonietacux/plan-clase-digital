@@ -21,6 +21,7 @@ function ActividadItem({ tituloActividad, duracion, etapaDidactica }) {
         color: "#1e293b"
       }}
     >
+      
       <div>
         <span
           style={{
