@@ -1,16 +1,48 @@
-// src/components/ActividadItem.jsx
-import React from 'react';
+
+import { motion } from "framer-motion";
 
 function ActividadItem({ tituloActividad, duracion, etapaDidactica }) {
-    return (
-        <div style={{ border: '5px solid #e2e8f0', padding: '20px 15px', borderRadius: '6px', marginBottom: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#ffffff' }}>
-            <div>
-                <span style={{ background: '#e0f2fe', color: '#0369a1', padding: '10px 20px', borderRadius: '4px', fontSize: '0.75em', fontWeight: 'bold' }}>{etapaDidactica}</span>
-                <h4 style={{ margin: '20px 0 0 0', color: '#1e293b', fontSize: '0.95em' }}>{tituloActividad}</h4>
-            </div>
-            <span style={{ fontSize: '0.85em', color: '#64748b' }}>⏱️ {duracion}</span>
-        </div>
-    );
+  return (
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 1 }}
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3 }}
+      style={{
+        border: "2px solid #e2e8f0",
+        padding: "20px 15px",
+        borderRadius: "8px",
+        marginBottom: "10px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "#ffffff",
+        color: "#1e293b"
+      }}
+    >
+      <div>
+        <span
+          style={{
+            backgroundColor: "#e0f2fe",
+            color: "#0369a1",
+            padding: "8px 12px",
+            borderRadius: "4px",
+            fontSize: "0.75em",
+            fontWeight: "bold"
+          }}
+        >
+          {etapaDidactica}
+        </span>
+
+        <h4>{tituloActividad}</h4>
+      </div>
+
+      <span style={{ color: "#64748b" }}>
+        ⏱️ {duracion}
+      </span>
+    </motion.div>
+  );
 }
 
 export default ActividadItem;

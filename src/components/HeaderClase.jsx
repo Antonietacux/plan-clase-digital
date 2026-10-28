@@ -1,12 +1,24 @@
-// src/components/HeaderClase.jsx
-import React from 'react';
+import { motion } from "framer-motion";
 
 function HeaderClase({ tituloTema, nombreDocente, horario }) {
-    return (
-        <header style={{ background: '#3f9df0', color: 'white', padding: '60px', borderRadius: '8px' }}>
-            <h1 style={{ margin: '0 0 5px 0' }}>{tituloTema}</h1>
-            <p style={{ margin: 0, fontSize: '0.9em', opacity: '0.9' }}>Docente: {nombreDocente} | Horario: {horario}</p>
-        </header>
-    );
+  return (
+    <motion.header
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3 }}
+      style={{
+        backgroundColor: "#3876ac",
+        color: "white",
+        padding: "30px",
+        borderRadius: "8px"
+      }}
+    >
+      <h1>{tituloTema}</h1>
+      <p>
+        Docente: {nombreDocente} | Horario: {horario} Grado: Primero Básico
+      </p>
+    </motion.header>
+  );
 }
+
 export default HeaderClase;
